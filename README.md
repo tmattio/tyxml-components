@@ -13,7 +13,7 @@ The primary purpose of `tyxml-components` is to offer reusable UI components for
 
 The second purpose is to mimic a typical frontend development workflow when you are building server-side rendered applications. By typical workflow, I mean that the UI components are extracted in a component library / design system, and its development is done separately from the application development.
 
-`tyxml-components` itself makes use of `tyxml-stories`, you can see the generated component explorer [here](https://github.com/tmattio/tyxml-components/).
+`tyxml-components` itself makes use of `tyxml-stories`, you can see the generated component explorer [here](https://tmattio.github.io/tyxml-components/).
 
 
 ## Using `tyxml-components`
