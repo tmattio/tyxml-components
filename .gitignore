@@ -17,3 +17,5 @@ _opam/
 # Generated static assets
 asset/static/main.js
 asset/static/main.css
+example/asset/static/main.js
+example/asset/static/main.css

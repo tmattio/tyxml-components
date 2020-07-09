@@ -40,6 +40,8 @@ Install it with:
 opam install tyxml-stories
 ```
 
+You can copy the content of `example/` which providers a minimal component explorer. Otherwise, read further for the required steps to get started.
+
 To build your own component explorer, you can first copy the `asset/` directory in your application. It provides the JS setup and static content needed to create a SPA application for the component explorer.
 
 Then you can create a "binary" file that starts your application:

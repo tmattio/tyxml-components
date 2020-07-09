@@ -1,0 +1,5 @@
+(executable
+ (name main)
+ (libraries my_component_stories)
+ (modules main)
+ (modes js))
