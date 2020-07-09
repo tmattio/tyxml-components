@@ -1,0 +1,6 @@
+(library
+ (name tyxml_components)
+ (public_name tyxml-components)
+ (libraries tyxml tyxml.functor virtual_dom)
+ (flags
+  (:standard -open StdLabels)))

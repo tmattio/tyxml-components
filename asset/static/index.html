@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tyxml Components</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Component library for Tyxml.">
+  <link rel="stylesheet" href="main.css">
+
+  <!-- AlpineJS -->
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.4.1/dist/alpine.min.js" defer="defer"></script>
+
+  <!-- OCaml code highlighting -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/monokai.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+  <script charset="UTF-8"
+    src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/ocaml.min.js"></script>
+
+  <!-- Inter font -->
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <style>
+    html {
+      font-family: 'Inter', sans-serif;
+    }
+
+    @supports (font-variation-settings: normal) {
+      html {
+        font-family: 'Inter var', sans-serif;
+      }
+    }
+  </style>
+</head>
+
+<body class="antialiased font-inter">
+  <div id="root"></div>
+  <script type='text/javascript' src='main.js'></script>
+  <script>
+    document.addEventListener('DOMSubtreeModified', (event) => {
+      document.querySelectorAll('pre code').forEach((block) => {
+        if (!block.getAttribute("updated")) {
+          hljs.highlightBlock(block);
+          block.setAttribute("updated", true)
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

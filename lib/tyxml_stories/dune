@@ -1,0 +1,7 @@
+(library
+ (name tyxml_stories)
+ (libraries tyxml async_kernel core_kernel incr_dom)
+ (preprocess
+  (pps ppx_jane js_of_ocaml-ppx))
+ (flags
+  (:standard -open StdLabels)))

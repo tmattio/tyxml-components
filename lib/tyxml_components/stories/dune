@@ -1,0 +1,5 @@
+(library
+ (name tyxml_components_stories)
+ (libraries tyxml tyxml_stories tyxml_components)
+ (flags
+  (:standard -open StdLabels -linkall)))
